@@ -19,8 +19,8 @@ target.loc <- c(500,550,0)
 transVec <- target.loc - init.loc + c(0,0,0.2)
 
 # Translate and modify the vertical distance
-releaseLocation <- release.loc + transVec
-receptorLocation <- t(receptor.loc + transVec)
+releaseLocation <- round(release.loc + transVec,2)
+receptorLocation <- round(t(receptor.loc + transVec),2)
 
 # read head, tail and repeatPart
 head <- readLines('sourcesProperties-head')
