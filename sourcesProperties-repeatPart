@@ -1,0 +1,21 @@
+fieldSource
+{
+    type            scalarExplicitSource;
+    active          true;
+    timeStart       0;
+    duration        1000000;
+    selectionMode   points;
+    points
+    (
+        sourceLocation
+    );
+
+    scalarExplicitSourceCoeffs
+    {
+        volumeMode      absolute;
+        injectionRate
+        {
+            fieldName   1.0;
+        }
+    }
+}
